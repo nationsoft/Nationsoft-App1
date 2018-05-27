@@ -18,7 +18,7 @@ $active: #dd0022;
 
 // ----- Styles -----
 body, html {
-  background-color: white;
+  background-color: black;
   color: rgba(black, 0.85);
   -webkit-font-smoothing: antialiased;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
