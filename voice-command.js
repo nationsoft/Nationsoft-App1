@@ -17,10 +17,10 @@ $(function() {
     /*url: 'https://www.google.com/search?q=',
     firstHit: 'https://www.google.com/search?btnI&q='
   }; */
-  defaultBehavior = { 
+  var defaultBehavior = { 
     url: 'https://www.bing.com/?q=',
     firstHit: 'https://www.bing.com/?q=!'
-  }
+  };
   var keywords = [{
     "keyword":[
       "weather be like",
