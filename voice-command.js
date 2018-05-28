@@ -14,14 +14,14 @@ $(function() {
   var tip;
 
   var defaultBehavior = {
-    url: 'https://www.google.com/search?q=',
+    /*url: 'https://www.google.com/search?q=',
     firstHit: 'https://www.google.com/search?btnI&q='
-  };
+  };*/
   // ZH You can easily switch from Google to other default search engines here
-  /*defaultBehavior = {
-    url: 'https://duckduckgo.com/?q=',
-    firstHit: 'https://duckduckgo.com/?q=!'
-  }*/
+  defaultBehavior = {
+    url: 'https://www.bing.com/?q=',
+    firstHit: 'https://www.bing.com/?q=!'
+  }
   var keywords = [{
     "keyword":[
       "weather be like",
