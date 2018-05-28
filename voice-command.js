@@ -12,13 +12,12 @@ $(function() {
   }, 10);
 
   var tip;
-
-  var defaultBehavior = {
+  // ZH You can easily switch from Google to other default search engines here
+  /* var defaultBehavior = {
     /*url: 'https://www.google.com/search?q=',
     firstHit: 'https://www.google.com/search?btnI&q='
-  };*/
-  // ZH You can easily switch from Google to other default search engines here
-  defaultBehavior = {
+  }; */
+  defaultBehavior = { 
     url: 'https://www.bing.com/?q=',
     firstHit: 'https://www.bing.com/?q=!'
   }
