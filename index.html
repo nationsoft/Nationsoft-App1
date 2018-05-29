@@ -69,13 +69,14 @@
   <p id="demo1"></p>
   
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">$msg</span>
+  <span class="popuptext" id="Simple Pop-Up!"</span>
 </div>
 
 <script>
 // When the user clicks on div, open the popup
 var $msg = "Wow Zaheer";
-  document.getElementById("demo1").innerHTML= $msg;
+  
+  window.alert(document.getElementById("demo1").innerHTML= $msg);
   
 function myFunction() {
     var popup = document.getElementById("myPopup");
