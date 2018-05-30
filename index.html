@@ -4,65 +4,10 @@
   <link rel="stylesheet" href="./style.css">
   <title>SmartShop</title>
   
-<style>
-/* Popup container - can be anything you want */
-.popup {
-    position: center;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-</style>
-
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
   
   </head>
 <body style="text-align:center">
@@ -81,7 +26,40 @@ function myFunction() {
 }
 </script>
 
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Position popup to window</a>
+    <a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="#demo">Position popup to element with id="demo"</a>
+    <a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="origin">Position popup to origin (default)</a>
+     
+    <div data-role="popup" id="myPopup1" class="ui-content">
+      <p>I will appear centered within the window.</p>
+    </div>
+    <div data-role="popup" id="myPopup2" class="ui-content">
+      <p>I will appear directly over the element with id="demo".</p>
+    </div>
+    <div data-role="popup" id="myPopup3" class="ui-content">
+      <p>I will appear directly over the clicked link.</p>
+    </div>
+    
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is also a paragraph.</p>
+    <p>This is also a paragraph. I have a child element: This is a <span id="demo" style="color:red;">span</span> element with id="demo", inside the paragraph.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
 </body>
+// End ZH mods
 
   <div id="unsupported" class="supported">
     <div class="table">
