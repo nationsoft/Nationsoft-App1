@@ -3,11 +3,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
   <title>SmartShop</title>
-  <style>
-/* ZH Begin Mod 5/29/2019 */  
-/* Popup container - can be anything you want */
+  
+<style type="text/css">
+
+.popup{
+    border: 4px solid #6b6a63;
+    width: 800px;
+    border-radius :7px;
+    margin : auto;
+    padding : 20px;
+    position:fixed;
+}
 
 </style>
+
+<div id="popup" class="popup">
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+some lengthy text<br>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    var popup_height = document.getElementById('popup').offsetHeight;
+    var popup_width = document.getElementById('popup').offsetWidth;
+    $(".popup").css('top',(($(window).height()-popup_height)/2));
+      $(".popup").css('left',(($(window).width()-popup_width)/2));
+});
+</script>
 </head>
 <body style="text-align:center">
 
