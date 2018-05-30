@@ -252,3 +252,23 @@ body {
     transform: rotate(45deg);
   }
 }
+.holder{        
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0px;
+    display:block;  
+}
+.popup{
+    width:800px;
+    margin:0 auto;
+    border-radius: 7px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;
+}
+
+.content{
+    background:#fff;
+    padding: 28px 26px 33px 25px;
+}
