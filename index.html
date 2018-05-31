@@ -15,17 +15,11 @@
 
   <div data-role="main" align="center" class="ui-content">
     <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="center">Help!</a>
-  
     <div data-role="popup" id="myPopup1" class="ui-content">
       <p>Smart shopping is all about making your shopping experience a success!  Just hold the speaker below and say what you want to buy.  For example - "I want to buy a new car".  Then sit back and watch ShopSmarty do it's magic!</p>
     </div>
   </div>
-</div> 
-  
-setTimeout(fade_out, 500);
-function fade_out() {
-   $("#myPopup1").fadeOut().empty();
-}
+</div>
   
   <div id="unsupported" class="supported">
     <div class="table">
@@ -52,6 +46,11 @@ function fade_out() {
 
   <div id="tip">Zaheer says - Press and hold to speak</div>
 
+  
+  setTimeout(fade_out, 500);
+  function fade_out() {
+  $("#myPopup1").fadeOut().empty();
+  }
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="./voice-command.js"></script>
