@@ -16,12 +16,17 @@
   <div data-role="main" align="center" class="ui-content">
     <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="center">Help!</a>
   
-    <div data-role="popup" id="myPopup1" class="ui-content" align="bottom">
+    <div data-role="popup" id="myPopup1" class="ui-content">
       <p>Smart shopping is all about making your shopping experience a success!  Just hold the speaker below and say what you want to buy.  For example - "I want to buy a new car".  Then sit back and watch ShopSmarty do it's magic!</p>
     </div>
   </div>
 </div> 
-
+  
+setTimeout(fade_out, 500);
+function fade_out() {
+   $("#myPopup1").fadeOut().empty();
+}
+  
   <div id="unsupported" class="supported">
     <div class="table">
       <div class="table-cell">Sorry, your browser isn't supported. Try using <a href="https://www.google.com/chrome/">Google Chrome</a>.</div>
