@@ -13,14 +13,14 @@ $(function() {
 
   var tip;
   // ZH You can easily switch from Google to other default search engines here
-  /* var defaultBehavior = {
-    /*url: 'https://www.google.com/search?q=',
+  var defaultBehavior = {
+    url: 'https://www.google.com/search?q=',
     firstHit: 'https://www.google.com/search?btnI&q='
-  }; */
-  var defaultBehavior = { 
+  }; 
+  /* var defaultBehavior = { 
     url: 'https://www.bing.com/?q=',
     firstHit: 'https://www.bing.com/?q=!'
-  };
+  }; */
   var keywords = [{
     "keyword":[
       "weather be like",
